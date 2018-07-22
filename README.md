@@ -43,7 +43,7 @@ git
     $ git push --all
     $ git push --set-upstream origin develop
 
-    database
+database
 -----
 
 データベース一覧
@@ -103,3 +103,14 @@ Django
 
     $ python manage.py makemigrations
     $ python manage.py migrate
+
+contrib
+-----
+
+    $ mkdir contrib
+    $ cd contrib
+    $ npm init
+
+    $ mkdir js
+    $ mkdir css
+    $ mkdir fonts
