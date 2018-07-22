@@ -114,3 +114,6 @@ contrib
     $ mkdir js
     $ mkdir css
     $ mkdir fonts
+
+nginx
+-----
