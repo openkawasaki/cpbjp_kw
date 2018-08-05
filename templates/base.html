@@ -1,0 +1,33 @@
+{% load staticfiles %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>川崎シビックパワーバトル</title>
+
+    {% block extrahead %}
+    {% endblock %}
+</head>
+
+<body>
+{% block content %}
+{% endblock %}
+
+<!-- base -->
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<script type="text/javascript" src={% static 'js/base.js' %}></script>
+<script type="text/javascript" src="{% static 'js/utility.js' %}"></script>
+
+{% block css %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+</body>
+</html>

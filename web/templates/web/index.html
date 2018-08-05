@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+<!-- header --->
+{% block extrahead %}
+{% endblock %}
+
+<!-- body --->
+{% block content %}
+<div id="background">
+    <img src="{% static 'web/images/kcpb.png' %}"alt="">
+</div>
+{% endblock %}
+
+<!-- body css --->
+{% block css %}
+<link rel="stylesheet" href="{% static 'web/css/web.css' %}">
+{% endblock %}
+
+<!-- body javascript --->
+{% block js %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'web/js/web.js' %}"></script>
+{% endblock %}
