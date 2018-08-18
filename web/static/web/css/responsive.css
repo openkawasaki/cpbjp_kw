@@ -1,0 +1,199 @@
+
+/* #Media Queries
+================================================== */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+.logo {
+    width: 23%;
+}
+nav {
+    width: 70% !important;
+}
+nav ul li {
+    padding: 6px 0 5px 32px;
+}
+#banner ul li img , #banner{
+    height: 650px;
+}
+#banner h2 {
+    padding: 35px 0 10px;
+}
+#banner p {
+    padding-bottom: 20px;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    bottom: 100px;
+}
+.emaildata {
+    left: 4%;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.logo {
+    width: 20%;
+}
+nav {
+    width: 70% !important;
+}
+.signup {
+    width: 10%;
+}
+header .logo a img {
+    width: 120px;
+    height: auto;
+}
+.bx-wrapper .bx-next {
+    right: 1%;
+}
+.bx-wrapper .bx-prev {
+    left: 90%;
+}
+#team h3 {
+    font-size: 17px;
+}
+nav ul li {
+    padding: 6px 0 5px 10px;
+}
+#banner ul li img , #banner{
+    height: 650px;
+}
+#banner h2 {
+    padding: 35px 0 10px;
+}
+#banner p {
+    padding-bottom: 20px;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    bottom: 100px;
+}
+.emaildata {
+    left: 4%;
+	    max-width: 300px;
+}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+.backcolor{background:#000;}
+  .signup {
+    display: none;
+}
+nav {
+    width: 100% !important;
+   text-align: center;
+}
+nav ul li {
+    padding: 6px 0 5px 0px;
+}
+#banner h2 {
+    font-size: 23px;
+	    padding: 5px 0 0px;
+}
+.buttons a {
+    width: 130px;
+	height: 45px;
+    line-height: 45px;
+}
+#banner ul li img , #banner{
+    height: 450px;
+}
+#banner p {
+    padding-bottom: 10px;
+}
+.buttons span {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 10px;
+   bottom: 8px;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    bottom: 20px;
+}
+.mainslide {
+    top: 23%;
+}
+
+.leftaroow {
+    padding: 10px;
+}
+.rightaroow {
+    padding: 10px;
+}
+.mainblog h3 {
+    font-size: 12px;
+
+}
+.mainblog {
+    margin-bottom: 30px;
+}
+#work {
+    padding: 50px 0 60px;
+}
+.width50 {
+    width: 98%;
+    margin: 1% 0 3% 0;
+}
+.bx-wrapper .bx-next {
+    right: 1%;
+}
+.bx-wrapper .bx-prev {
+    left: 77%;
+}
+#testimonials {
+    padding: 40px 0 50px;
+}
+#testimonials p {
+    padding: 20px 0 45px;
+}
+.msg {
+    margin-left: 0;
+}
+#team p {
+    padding: 20px 0 30px;
+}
+#team img{display:block; margin:10px auto 0;}
+#map {
+    height: 300px;
+}
+.emaildata h3, .emaildata p {
+    padding-left: 5px;
+}
+.emaildata {
+    left: 3%;
+	    top: 20%;
+	    max-width: 125px;
+}
+.emaildata a {
+    font-size: 11px;
+}
+.emaildata h3 {
+    font-size: 14px;
+}
+.emaildata p {
+    padding-top: 0px;
+    padding-bottom: 8px;
+}
+footer {
+    text-align: center;
+}
+footer article{margin-bottom:20px;}
+.max350 {
+    text-align: center;
+}
+header.sticky {
+    padding: 10px 0px;
+}
+header .logo a img {
+    padding-top: 15px;
+}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+}

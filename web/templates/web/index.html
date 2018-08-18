@@ -1,25 +1,449 @@
-{% extends 'base.html' %}
 {% load staticfiles %}
 {% load i18n %}
 
-<!-- header --->
-{% block extrahead %}
-{% endblock %}
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Orion</title>
 
-<!-- body --->
-{% block content %}
-<div id="background">
-    <img src="{% static 'web/images/kcpb.png' %}"alt="">
+<!--META-->
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+
+<!--FONTS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/grid.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/menu.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/jquery.bxslider.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/responsive.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/animate.css' %}">
+</head>
+
+<body>
+<div class="se-pre-con">
+<div class="wrapper">
+	<div class="cssload-loader"></div>
 </div>
-{% endblock %}
+</div>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="logo"><a href="#"><img src="{% static 'web/images/logo.png' %}" alt=""/></a></div>
+        <nav class="nav-collapse">
+          <ul>                                                                                
+          	<li class="menu-item active"><a href="#banner" data-scroll>SERVICES</a></li>
+            <li class="menu-item"><a href="#hows" data-scroll>HOW</a></li>
+            <li class="menu-item"><a href="#work" data-scroll>OUR WORK</a></li>
+            <li class="menu-item"><a href="#testimonials" data-scroll>TESTIMONIALS</a></li>
+            <li class="menu-item"><a href="#team" data-scroll>TEAM</a></li>
+            <li class="menu-item"><a href="#conact" data-scroll>CONTACT US</a></li>
+          </ul>
+        </nav>
+        <div class="signup"><a href="#">SIGN UP</a></div>
+      </div>
+    </div>
+  </div>
+</header>
 
-<!-- body css --->
-{% block css %}
-<link rel="stylesheet" href="{% static 'web/css/web.css' %}">
-{% endblock %}
+<section id="banner">
+	<ul class="bxslider">
+        	<li>
+            	<img src="{% static 'web/images/banner.jpg' %}" alt=""/>
+            </li>
+            <li>
+            	<img src="{% static 'web/images/banner.jpg' %}" alt=""/>
+            </li>
+            <li>
+            	<img src="{% static 'web/images/banner.jpg' %}" alt=""/>
+            </li>
+     </ul>
 
-<!-- body javascript --->
-{% block js %}
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="{% static 'web/js/web.js' %}"></script>
-{% endblock %}
+      		<div class="mainslide os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.5s">
+                <i class="fa fa-rocket fa-5x" aria-hidden="true"></i>
+                <h2>LET’S EXPLORE THE SKY!</h2>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+                <div class="buttons">
+                    <a href="#" class="learn">LEARN MORE</a>
+                    <span>OR</span>
+                    <a href="#" class="contact">CONTACT US</a>
+                </div>
+            </div>
+     
+</section>
+
+<div class="services">
+	<div class="container">
+		<div class="row">
+    		<div class="col-lg-4 col-sm-4 col-md-4 os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.3s">
+            	<article>
+                	<i class="fa fa-object-ungroup" aria-hidden="true"></i>
+                    <h2>Web Design</h2>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris. </p>
+                </article>
+            </div>
+        	<div class="col-lg-4 col-sm-4 col-md-4 os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.5s">
+            	<article>
+                	<i class="fa fa-anchor" aria-hidden="true"></i>
+                    <h2>Logo Design</h2>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris. </p>
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-4 os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.7s">
+            	<article>
+                	<i class="fa fa-print" aria-hidden="true"></i>
+                    <h2>Print Design</h2>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. mauris. </p>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="hows">
+    	<div class="container">
+    		<div class="row">
+            	<div class="col-lg-12 os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.5s">
+    				<div class="about">
+    					<h2>How we work</h2>
+                       <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+                    </div>
+    				
+    				<div class="mainblog clearfix">
+    					<div class="ourblog clearfix">
+    						<div class="blogleft"><p class="not">dsfg</p></div>
+                            <div class="blogmiddle">
+                            	<span class="bollblank"></span>
+                                <span class="bollline1"></span>
+                            	<span class="bollblue"></span>
+                                <span class="bollline2"></span>
+                            </div>	
+                            <div class="blogright">
+                            	<div class="leftaroow">
+                                    <h3>Client contact us</h3>
+                                    <p>This is Photoshop's version  of Lorem Ipsum.</p>
+                                </div>
+                            </div>
+                    	</div>
+                        
+                        <div class="ourblog clearfix">
+                        	<div class="blogleft">
+                            	<div class="rightaroow">
+                                    <h3>Client contact us</h3>
+                                    <p>This is Photoshop's version  of Lorem Ipsum.</p>
+                                </div>
+                            </div>
+    						
+                            <div class="blogmiddle">
+                            	<span class="bollred"></span>
+                                <span class="bollline3"></span>
+                                <span class="bollblank"></span>
+                            </div>	
+                            
+                            <div class="blogright"><p class="not">dsfg</p></div>
+                    	</div>
+                    </div>
+                    <a href="#" class="allwork">See all how we work </a>
+                    </div>
+    		</div>
+    	</div>
+    </section>
+  
+
+	<section id="work">
+		<div class="container os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.5s">
+			<div class="row">
+        		<div class="col-lg-12">
+            		<h2>Our work</h2>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+                </div>
+            </div>
+            <div class="row">
+        		<div class="col-lg-12">
+                	<ul class="bxslider">
+                    	<li>
+                            <div class="maxdata">
+                                <div class="width50">
+                                    <div class="imgwork">
+                                        <a href="#"><img src="{% static 'web/images/w1.jpg' %}" alt=""/></a>
+                                        <div class="boxblck">
+                                            <a href="#">Sylabus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="width50">
+                                    <div class="imgwork">
+                                        <a href="#"><img src="{% static 'web/images/w2.jpg' %}" alt=""/></a>
+                                        <div class="boxblck">
+                                            <a href="#">Contest</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="width50">
+                                    <div class="imgwork">
+                                        <a href="#"><img src="{% static 'web/images/w3.jpg' %}" alt=""/></a>
+                                        <div class="boxblck">
+                                            <a href="#">Travel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="width50">
+                                    <div class="imgwork">
+                                        <a href="#"><img src="{% static 'web/images/w4.jpg' %}" alt=""/></a>
+                                        <div class="boxblck">
+                                            <a href="#">Shop</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    	</li>
+                        
+                        <li>
+                            <div class="maxdata">
+                                <div class="width50">
+                                    <div class="imgwork">
+                                        <a href="#"><img src="{% static 'web/images/w1.jpg' %}" alt=""/></a>
+                                        <div class="boxblck">
+                                            <a href="#">Sylabus</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="width50">
+                                    <div class="imgwork">
+                                        <a href="#"><img src="{% static 'web/images/w2.jpg' %}" alt=""/></a>
+                                        <div class="boxblck">
+                                            <a href="#">Contest</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="width50">
+                                    <div class="imgwork">
+                                        <a href="#"><img src="{% static 'web/images/w3.jpg' %}" alt=""/></a>
+                                        <div class="boxblck">
+                                            <a href="#">Travel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="width50">
+                                    <div class="imgwork">
+                                        <a href="#"><img src="{% static 'web/images/w4.jpg' %}" alt=""/></a>
+                                        <div class="boxblck">
+                                            <a href="#">Shop</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    	</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</section>
+
+	<aside id="testimonials">
+    	<div class="container">
+    		<div class="row">
+        		<div class="col-lg-12 os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.5s">
+            		<h2>Testimonials</h2>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+                	
+                    <div class="max610">
+                    	<img src="{% static 'web/images/testimonials.png' %}" alt=""/>
+                        <div class="msg">
+                        	<h3>Neil Armstrong / <span>1st man walk on the moon</span></h3>
+                            <p>“ Orion is great, you should try it. The component is very easy to understand, the value is great too. And last but not least, orion is my favorite services.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <section id="team">
+    	<div class="container os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.7s">
+        	<div class="row">
+        		<div class="col-lg-12">
+            		<h2>Meet the team</h2>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+                </div>
+            </div>
+            
+            <div class="row">
+        		<div class="col-lg-3 col-sm-3 col-md-3">
+            			<img src="{% static 'web/images/t1.png' %}" alt=""/>
+                        <h3>Afnizar Nur Ghifari</h3>
+                        <span>Chief Executive Officer</span>
+                        <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                         <a href="#" class="twtr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                          <a href="#" class="drbl"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-md-3">
+            			<img src="{% static 'web/images/t2.png' %}" alt=""/>
+                        <h3>Henry Phillips</h3>
+                        <span>Black Belt UI/UX Strategist</span>
+                        <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                         <a href="#" class="twtr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                          <a href="#" class="drbl"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-md-3">
+            			<img src="{% static 'web/images/t3.png' %}" alt=""/>
+                        <h3>Gerald Elliott</h3>
+                        <span>Lead User Experience Manager</span>
+                        <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                         <a href="#" class="twtr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                          <a href="#" class="drbl"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-md-3">
+            			<img src="{% static 'web/images/t4.png' %}" alt=""/>
+                        <h3>Read Alexander</h3>
+                        <span>Lead User Experience Manager</span>
+                        <a href="#" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                         <a href="#" class="twtr"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                          <a href="#" class="drbl"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+<div class="onemap" id="conact">
+<div id="map">
+
+</div>
+	<div class="emaildata os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
+    	<h3>Blue Avenue #33, King Leonardo 33821</h3>
+        <p> +82394 5940</p>
+        <a href="#">SEND US AN EMAIL </a>
+    </div>
+</div>
+<div class="client">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-lg-3 col-sm-6 col-md-3 os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.3s">
+            	<img src="{% static 'web/images/c1.png' %}" alt=""/>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-3 os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.5s">
+            <img src="{% static 'web/images/c2.png' %}" alt=""/>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-3 os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.7s">
+            <img src="{% static 'web/images/c3.png' %}" alt=""/>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-3 os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.9s">
+            <img src="{% static 'web/images/c4.png' %}" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+	<div class="container">
+    	<div class="row">
+    		<div class="col-lg-6 col-sm-6 col-md-6">
+        		<div class="row">
+                	<div class="col-lg-4 col-sm-4 col-md-4">
+                    	<article>
+                        <h3>VALUE</h3>
+                        <a href="#">About</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Service</a>
+                        <a href="#">Customer</a>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-4">
+                    	<article>
+                        <h3>AFFILIATE</h3>
+                        <a href="#">NASA</a>
+                        <a href="#">JAXA Japan</a>
+                        <a href="#">Boeing</a>
+                        <a href="#">ABC Networks</a>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-md-4">
+                    	<article>
+                        <h3>SOCIAL</h3>
+                        <a href="#">Facebook</a>
+                        <a href="#">Dribbble</a>
+                        <a href="#">Twitter</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-sm-6 col-md-6">
+        		<div class="max350">
+                	<h3>GET SERVED</h3>
+                    <input type="text" placeholder="user@email.com"/><button>GO</button>
+                    <p>Orion Theme  © Afnizar Nur Ghifari </p>
+                    <p>Made with love <i class="fa fa-heart" aria-hidden="true"></i></p>
+                    <p>Free Template by <a href="http://freetemplates.pro/">FreeTemplates.pro</a></p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="{% static 'web/js/jquery.bxslider.js' %}"></script>
+<script src="{% static 'web/js/fixed-responsive-nav.js' %}"></script>
+<script src="{% static 'web/js/waypoints.min.js' %}"></script>
+<script src="{% static 'web/js/script.js' %}"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+					scrollwheel: false,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(23.0347016, 72.4897876), // India
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(23.0347016, 72.4897876),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+				
+            }
+			
+			
+			
+			
+			
+        </script>
+        
+</body>
+</html>
