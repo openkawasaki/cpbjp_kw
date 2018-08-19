@@ -667,3 +667,26 @@ if it's not present, don't show loader */
 	0% { -moz-transform: rotate(0deg); }
 	100% { -moz-transform: rotate(360deg); }
 }
+
+
+.description{
+	/*text-align:center;*/
+	background:#e7eef6;
+	padding-top:28px;
+	border-bottom:1px solid #d7dbe0;
+}
+
+.description i{width:96px; height:96px; line-height:96px; text-align:center; border-radius:5px; background:#cadaec; color:#fff; font-size:40px;}
+
+.description h2{font-size:20px; color:#555555; font-weight:700; padding:25px 0 20px;}
+.description p{padding-bottom:28px;}
+
+
+.info{
+	text-align:center;
+	padding-bottom:10px;
+}
+.info p{padding:40px 0 30px;}
+.info h2{font-size:32px; color:#363636; margin-top:15px;}
+.info span{display:block; font-size:16px; color:#b7b7b7; margin-bottom:5px;}
+.info a i{font-size:32px; margin:0 10px;}
