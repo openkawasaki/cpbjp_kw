@@ -690,3 +690,9 @@ if it's not present, don't show loader */
 .info h2{font-size:32px; color:#363636; margin-top:15px;}
 .info span{display:block; font-size:16px; color:#b7b7b7; margin-bottom:5px;}
 .info a i{font-size:32px; margin:0 10px;}
+
+.studysession{
+	padding-top:10px;
+	padding-bottom:10px;
+	background: #f0f8ff;
+}
